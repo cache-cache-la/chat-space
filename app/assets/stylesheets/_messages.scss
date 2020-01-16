@@ -4,7 +4,6 @@
 
 .wrapper {
   display: flex;
-  overflow: hidden;
 }
 
 .side-bar {
@@ -13,17 +12,35 @@
   width: 300px;
   &__header{
     height: 100px;
-    .top-items{
-
-    }
-    .top-items__name{
-
-    }
-    .top-items__icon{
-
+    display: flex;
+    align-items: center;
+    .top-items {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      background-color: #333333;
+      height: 20px;
+      width: 260px;
+      &__name {
+        width: 200px;
+        line-height: 20px;
+      }
+      &__icon {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        width: 60px;
+      }
+      &__newgroup{
+        color: white;
+        padding-right: 5px;
+      }
+      &__account {
+        color: white;
+      }
     }
   }
-  &__group-list{
+  &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
   }

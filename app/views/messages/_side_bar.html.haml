@@ -1,6 +1,10 @@
 .side-bar
   .side-bar__header
     .top-items
-    .top-items__name
-    .top-items__icon
+      .top-items__name
+      .top-items__icon
+        =link_to "#", class: "top-items__newgroup" do
+          %i.fa.fa-edit
+        =link_to "#", class: "top-items__account" do
+          %i.fa.fa-cog
   .side-bar__group-list
