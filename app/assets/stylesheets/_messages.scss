@@ -17,6 +17,7 @@
   }
 
   .side-header {
+    overflow: hidden;
     background-color: #253141;
     height: 100px;
     display: flex;
@@ -51,6 +52,7 @@
   }
 
   &__groups {
+    overflow: scroll;
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
@@ -80,6 +82,7 @@
   }
 
   &__group-info {
+    overflow: scroll;
     height: 100px;
     padding: 0 40px;
     display: flex;
@@ -117,9 +120,11 @@
       line-height: 40px;
       margin-top: 28px;
       padding: 0 20px;
+      cursor: pointer;
     }
   }
   &__message-list {
+    overflow: scroll;
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 35px 0 0 40px;
@@ -151,5 +156,42 @@
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
+    padding: 20px 40px;
+    
+    .new-message {
+      display: flex;
+      justify-content: space-between;
+
+      .input-box {
+        width: 100%;
+        position: relative;
+
+        &__text {
+          height: 50px;
+          width: 100%;
+          border-style: none;
+          padding-left: 10px;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+
+          &__file {
+            display: none;
+          }
+        }
+      }
+      .submit-btn {
+        background-color: #38aef0;
+        color: white;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@
         Member :
         %li.main__group-info__left-box__member-list__member
           name
-    =link_to "Edit", "#", class: "btn main__group-info__edit-group-btn"
+    =link_to "Edit", "#", class: "main__group-info__edit-group-btn"
 
   .main__message-list
     .message
@@ -20,3 +20,10 @@
         Hello World
 
   .main__message-form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          %i.far.fa-image.fa-2x
+            %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "Send", class: "submit-btn"}
