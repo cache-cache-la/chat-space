@@ -1,4 +1,22 @@
-.chat-main
-  .chat-main__group-info
-  .chat-main__message-list
-  .chat-main__message-form
+.main
+  .main__group-info
+    .main__group-info__left-box
+      .main__group-info__left-box__current-group
+        techexpert68
+      %ul.main__group-info__left-box__member-list
+        Member :
+        %li.main__group-info__left-box__member-list__member
+          name
+    =link_to "Edit", "#", class: "btn main__group-info__edit-group-btn"
+
+  .main__message-list
+    .message
+      .message__info
+        .message__info__speaker
+          name
+        .message__info__date
+          2019/01/17(Fri) 17:00:00
+      .message__text
+        Hello World
+
+  .main__message-form
