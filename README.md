@@ -12,7 +12,7 @@
 - has_many :groups, through: :groups_users
 - has_many :messages
 
-## groups_usersテーブル
+## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|references|foreign_key: true|
