@@ -1,0 +1,66 @@
+// 画面左のサイドバー一覧
+
+.side {
+  color: white;
+  width: 300px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .side-header {
+    overflow: hidden;
+    background-color: $dark_bluepurple;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      background-color: $blackish_gray;
+      height: 20px;
+      width: 260px;
+
+      &__user-name {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &__menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 60px;
+
+        &__new-group {
+          padding-right: 5px;
+        }
+        &__edit-user {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  &__groups {
+    overflow: scroll;
+    background-color: $blue_purple;
+    height: calc(100vh - 100px);
+    padding: 20px 20px 0;
+
+    .group {
+      margin-bottom: 40px;
+
+      &__name {
+        font-size: 15px;
+        margin-bottom: 5px;
+        }
+      &__last-message {
+        font-size: 11px;
+
+      }
+    }
+  }
+}

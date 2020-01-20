@@ -1,0 +1,124 @@
+// 画面右のメイン一覧
+
+.main {
+  background-color: white;
+  height: 100vh;
+  width: calc(100vw - 300px);
+
+  a {
+    text-decoration: none;
+  }
+
+  &__group-info {
+    overflow: scroll;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $whitish_gray;
+
+    ul {
+      list-style: none;
+    }
+
+    &__left-box {
+      margin-top: 35px;
+
+      &__current-group {
+        color: $blackish_gray;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      &__member-list {
+        display: flex;
+        color: $dark_gray;
+        font-size: 12px;
+
+        &__member {
+          margin-left: 5px;
+        }
+      }
+    }
+    &__edit-group-btn {
+      color: $nemophila;
+      font-size: 16px;
+      border: solid 1px $nemophila;
+      height: 40px;
+      width: 72px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+  &__message-list {
+    overflow: scroll;
+    background-color: $grayish_white;
+    height: calc(100vh - 100px - 90px);
+    padding: 35px 0 0 40px;
+
+    .message {
+      &__info {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: left;
+
+        &__speaker {
+          color: $blackish_gray;
+          font-size: 16px;
+          margin-right: 10px;
+        }
+        &__date {
+          color: $dark_gray;
+          font-size: 12px;
+        }
+      }
+      &__text {
+        color: $blackish_bluepurple;
+        font-size: 14px;
+        margin-bottom: 46px;
+      }
+    }
+  }
+  &__message-form {
+    background-color: $pale_gray;
+    height: 90px;
+    padding: 20px 40px;
+    
+    .new-message {
+      display: flex;
+      justify-content: space-between;
+
+      .input-box {
+        width: 100%;
+        position: relative;
+
+        &__text {
+          height: 50px;
+          width: 100%;
+          border-style: none;
+          padding-left: 10px;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+
+          &__file {
+            display: none;
+          }
+        }
+      }
+      .submit-btn {
+        background-color: $nemophila;
+        color: white;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
+    }
+  }
+}
