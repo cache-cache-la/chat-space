@@ -3,9 +3,9 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|nickname|string|null: false|
-|email|string|null: false, unique: true|
-|password|string|null: false, unique: true|
+|name|string|null: false, unique: true|
+|email|string|null: false, default: ""|
+|password|string|null: false, default: ""|
 
 ### Association
 - has_many :groups_users
