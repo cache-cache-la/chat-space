@@ -11,7 +11,7 @@
 
   .side-header {
     overflow: hidden;
-    background-color: $dark_bluepurple;
+    background-color: $side_blue_dark;
     height: 100px;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
 
   &__groups {
     overflow: scroll;
-    background-color: $blue_purple;
+    background-color: $side_blue_light;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
 

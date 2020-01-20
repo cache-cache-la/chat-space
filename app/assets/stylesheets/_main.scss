@@ -31,7 +31,7 @@
       }
       &__member-list {
         display: flex;
-        color: $dark_gray;
+        color: $light_gray;
         font-size: 12px;
 
         &__member {
@@ -40,9 +40,9 @@
       }
     }
     &__edit-group-btn {
-      color: $nemophila;
+      color: $light_blue;
       font-size: 16px;
-      border: solid 1px $nemophila;
+      border: solid 1px $light_blue;
       height: 40px;
       width: 72px;
       line-height: 40px;
@@ -69,22 +69,22 @@
           margin-right: 10px;
         }
         &__date {
-          color: $dark_gray;
+          color: $light_gray;
           font-size: 12px;
         }
       }
       &__text {
-        color: $blackish_bluepurple;
+        color: $black;
         font-size: 14px;
         margin-bottom: 46px;
       }
     }
   }
   &__message-form {
-    background-color: $pale_gray;
+    background-color: $pale_gray2;
     height: 90px;
     padding: 20px 40px;
-    
+
     .new-message {
       display: flex;
       justify-content: space-between;
@@ -111,7 +111,7 @@
         }
       }
       .submit-btn {
-        background-color: $nemophila;
+        background-color: $light_blue;
         color: white;
         height: 50px;
         width: 100px;
