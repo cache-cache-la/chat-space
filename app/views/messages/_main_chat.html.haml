@@ -2,12 +2,13 @@
   .main__group-info
     .main__group-info__left-box
       .main__group-info__left-box__current-group
-        techexpert68
+        = @group.name
       %ul.main__group-info__left-box__member-list
         Member :
-        %li.main__group-info__left-box__member-list__member
-          name
-    =link_to "Edit", "#", class: "main__group-info__edit-group-btn"
+        - @group.users.each do |user|
+          %li.main__group-info__left-box__member-list__member
+            = user.name
+    =link_to "Edit", "/groups/#{@group.id}/edit", class: "main__group-info__edit-group-btn"
 
   .main__message-list
     .message

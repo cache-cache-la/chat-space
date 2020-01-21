@@ -10,10 +10,10 @@ class Group < ApplicationRecord
       if last_message.content?
         last_message.content
       else
-        '画像が投稿されています'
+        "画像が投稿されています"
       end
     else
-      'まだメッセージはありません。'
+      "まだメッセージはありません。"
     end
   end
 
