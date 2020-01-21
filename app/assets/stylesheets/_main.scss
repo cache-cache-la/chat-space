@@ -87,7 +87,6 @@
 
     .new-message {
       display: flex;
-      justify-content: space-between;
 
       .input-box {
         width: 100%;
@@ -97,7 +96,8 @@
           height: 50px;
           width: 100%;
           border-style: none;
-          padding-left: 10px;
+          padding: 0 40px 0 10px;
+          border-style: none;
         }
         &__image {
           position: absolute;
