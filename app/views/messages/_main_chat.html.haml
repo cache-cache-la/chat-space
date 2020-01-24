@@ -11,8 +11,7 @@
     =link_to "Edit", "/groups/#{@group.id}/edit", class: "main__group-info__edit-group-btn"
 
   .main__message-list
-    .message
-      = render @messages
+    = render @messages
 
   .main__message-form
     = form_for [@group, @message], html:{class: "new-message"} do |f|
