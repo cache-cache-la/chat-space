@@ -1,7 +1,6 @@
 $(function(){
 
   function buildHTML(message){
-    // 投稿者と投稿日時
     var html =
       `<div class="message" data-message-id="${message.id}">
         <div class="message__info">
@@ -12,9 +11,7 @@ $(function(){
             ${message.created_at}
           </div>
         </div>`
-    // 画像あり
     if ( message.image ) {
-      // メッセージと画像あり
       if ( message.content ) {
         html +=
             `<div class="message__text">
@@ -24,13 +21,11 @@ $(function(){
             `<img class="lower-message__image" src="${message.image}">
           </div>`
       }
-      // 画像のみ
       else {
         html +=
             `<img class="lower-message__image" src="${message.image}">
           </div>`
       }
-    // 画像なし（メッセージのみ）
     } else {
       html +=
           `<div class="message__text">
