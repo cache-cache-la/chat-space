@@ -22,11 +22,11 @@ class GroupsController < ApplicationController
     end
 
     def update
-        if @group.update(group_params)
-            redirect_to group_messages_path(@group.id), notice: 'グループを更新しました'
-        else
-            render :edit
-        end
+      if @group.update(group_params)
+        redirect_to group_messages_path(@group.id), notice: 'グループを更新しました'
+      else
+        render :edit
+      end
     end
 
     private
